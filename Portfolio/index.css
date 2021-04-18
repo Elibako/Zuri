@@ -1,0 +1,434 @@
+/* RESPONSIVE GRID */
+/*  SECTIONS  */
+    .section {
+        clear: both;
+        padding: 0px;
+        margin: 0px;
+    } 
+/*  COLUMN SETUP  */
+    .col {
+        display: block;
+        float:left;
+        margin: 1% 0 1% 1.6%;
+    }
+    .col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+    .group:before,
+    .group:after { content:""; display:table; }
+    .group:after { clear:both;}
+    /* .group { zoom:1; [> For IE 6/7 <] } */
+
+/*  GRID OF SIX  */
+.span_6_of_6 {
+	width: 100%;
+}
+.span_5_of_6 {
+  	width: 83.06%;
+}
+.span_4_of_6 {
+  	width: 66.13%;
+}
+.span_3_of_6 {
+  	width: 49.2%;
+}
+.span_2_of_6 {
+  	width: 32.26%;
+}
+.span_1_of_6 {
+  	width: 15.33%;
+}
+/*
+/* PENSER A AJOUTER max-width : 480px !!! */
+/* ------------------------------------------------------------------ */
+/* configuration for smartphone (default) */
+/* ------------------------------------------------------------------ */
+    body {
+        margin:0;
+        padding:0;
+        font-size:100%;
+        font-family:"Open Sans";
+    }
+/* CHANGE GRID TO FIT SMARTPHONE */
+    .col {  margin: 1% 0 1% 0%; }
+    .wide {width:95vw;}
+/* HORIZONTAL MENUBAR */
+    #navbar {
+        width:100%;
+        position:fixed;
+        overflow:auto;
+        background-color:#363b74;
+        box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.2), 3px 3px 3px 0 rgba(0, 0, 0, 0.19);
+    }
+    #name {
+        display:none;
+    }
+    #menuButton {
+        display:block;
+        margin:1% 0% 1% 2%;
+    }
+    .button {
+        display:inline-block;
+        width:23%;
+        /* adaptative fontsize : unit in vw */
+        font-size:6vw;
+        text-align:center;
+        text-decoration:none;
+        padding:2% 0%;
+        background-color:#ebebf2;
+        color:#000
+    }
+    .button:hover {
+        background-color:#555;
+        color:white;
+    }
+/* CENTRAL BOXES */
+    .main {
+        min-height:25vh;
+        padding-top:4vh;
+        background-color:rgba(94,14,124,0.4);
+    }
+    .title {
+        text-align:right;
+        font-size:9vw;
+        font-weight:bold;
+        min-height:5vh;
+        margin-top:0;
+        padding-top:11vh;
+        padding-right:1vw;
+        background-color:rgba(255,255,255,0.5);
+        box-shadow: 0 -5px 8px 0 rgba(0, 0, 0, 0.2), 0 -6px 10px 0 rgba(0, 0, 0, 0.19); 
+    }
+/* DESCRIPTION */
+    #desBox {
+        padding:0.5vh 1vw;
+    }
+    .smallDes {
+        font-size:5vw;
+        margin:5vw;
+        padding:0vh 1vw;
+    }
+    .card {
+        background-color:#ebebf2;
+        border:1px solid #ddd;
+        box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.2), 3px 3px 3px 0 rgba(0, 0, 0, 0.19);
+    }
+/* KNOWLEDGE */
+    .logo1 {
+        display:block;
+        margin:auto;
+        width:45%;
+    }
+    .logo2 {
+        display:block;
+        margin:auto;
+        width:45%;
+    }
+    .logo3 {
+        display:block;
+        margin:auto;
+        width:85%;
+    }
+    #git {
+        width:90%;
+        margin-top:20px;
+    }
+    #html {
+        width:55%;
+    }
+    #manjaro {
+        margin-top:8px;
+    }
+    #mint {
+        width:60%;
+    }
+    #neovim {
+        width:105%;
+        margin-top:20px;
+    }
+    #R {
+        width:60%;
+        margin-top:5px;
+    }
+/* PORTFOLIO */
+    .polaroid {
+        display:block;
+        margin:auto;
+        width:90%;
+        background-color:#ebebf2;
+        border:1px solid #ddd;
+        box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.2), 3px 3px 3px 0 rgba(0, 0, 0, 0.19);
+    }
+    .container {
+        text-align:center;
+        font-size:5vw;
+    }
+    .work {
+        display:none;
+    }
+/* CONTACT */
+    form {
+        margin-left:5vw;
+        margin-right:5vw;
+        padding:1%;
+        font-weight:bold;
+        font-size:5vw;
+        background-color:#ebebf2;
+        border:1px solid #ddd;
+        box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.2), 3px 3px 3px 0 rgba(0, 0, 0, 0.19);
+    }
+    input {
+        display:block;
+        width:93%;
+    }
+    #message {
+        height:15vh;
+    }
+    #submit {
+        width:30%;
+        margin-top:-5%;
+    }
+    #linkedIn {
+        width:35%;
+        margin-top:-5vw;
+    }
+    #freecodecamp {
+        width:25%;
+        margin-bottom:8vw;
+    }
+    #github {
+        width:20%;
+        margin-bottom:6.5vw;
+        margin-left:8vw;
+    }
+    #coursera {
+        display:none;
+    }
+/* FOR PARALLAX SCROLLING */
+    .picture {
+        background-attachment:fixed;
+        background-position:center;
+        background-repeat:no-repeat;
+        background-size:cover;
+    }
+/* SMALL BACKGROUND PICTURES */
+    #desPicture {
+        background-position:0vh 8vh;
+        height:45vh;
+        background-image:url("img/pexels-coffee-bean-430546.jpg");
+    }
+    #knowPicture {
+        height:45vh;
+        background-image:url("img/pexels-creative-vix-9746.jpg")
+    }
+    #portPicture {
+        height:45vh;
+        background-image:url("img/blueprintSmall.jpg");
+    }
+    #contactPicture {
+        height:45vh;
+        background-image:url("img/pexels-plann-4549408.jpg") ;
+    }
+
+/* ------------------------------------------------------------------ */
+/* BIG SCREEN (update default) */
+/* ------------------------------------------------------------------ */
+@media (min-width: 1000px)
+{
+    
+/*  GRID OF SIX  */
+.span_6_of_6 {
+	width: 100%;
+}
+.span_5_of_6 {
+  	width: 83.06%;
+}
+.span_4_of_6 {
+  	width: 66.13%;
+}
+.span_3_of_6 {
+  	width: 49.2%;
+}
+.span_2_of_6 {
+  	width: 32.26%;
+}
+.span_1_of_6 {
+  	width: 15.33%;
+}
+    
+/* SIDE NAVBAR WITH ADAPTATIVE FONTSIZE */
+    #navbar {
+        float:left;
+        width:12vw;
+        min-height:96vh;
+        margin-top:2vh;
+        margin-bottom:22vh;
+        overflow:auto;
+    }
+    #name {
+        display:block;
+    }
+    #menuButton {
+        margin:20vh 5% 0 5%;
+    }
+    #name {
+        font-size:1.9vw;
+        font-weight:bold;
+        color:#ebebf2;
+        padding-left:5%
+    }
+    .button {
+        display:block;
+        width:90%;
+        padding:10% 0% 10% 10%;
+        margin:5% 0%;
+        /* adaptative fontsize : unit in vw */
+        font-size:2vw;
+        text-align:left;
+    }
+/* CENTRAL BOXES */
+    .main {
+        min-height:25vh;
+        padding-left:12vw;
+        padding-top:4vh;
+        background-color:#ebebf2;
+    }
+    .title {
+        font-size:4vw;
+        font-weight:bold;
+        padding-top:2vh;
+        padding-bottom:2vh;
+        padding-right:2vw;
+        padding-left:12vw;
+    }
+/* DESCRIPTION */
+    #desTitle {
+        min-height:6vh;
+    }
+    #desBox {
+        min-height:25vh;
+        padding-left:12vw;
+        padding-top:3vh;
+        padding-bottom:1vh;
+    }
+    .largeDes {
+        font-size:2vw;
+        margin:2vh 5vw;
+        margin-top:0;
+        padding:1vh 1vw;
+    }
+    .card {
+        background-color:white;
+    }
+/* KNOWLEDGE */
+    .logo1 {
+        width:20%;
+    }
+    .logo2 {
+        width:20%;
+    }
+    .logo3 {
+        width:50%;
+    }
+    .logo1, .logo2, .logo3 {
+        margin-top:-1.5%;
+    }
+    #git {
+        width:50%;
+        margin-top:20px;
+    }
+    #html {
+        width:28%;
+    }
+    #R {
+        width:28%;
+    }
+    #neovim {
+        width:60%;
+    }
+    #mint {
+        width:28%;
+    }
+/* PORTFOLIO */
+    .polaroid {
+        margin-top:-5%;
+        width:80%;
+        background-color:white;
+    }
+    .container {
+        font-size:1.5vw;
+    }
+    .polaroid:hover {
+        width:95%;
+        box-shadow: 10px 10px 3px 0px rgba(0, 0, 0, 0.2), 10px 10px 3px 0 rgba(0, 0, 0, 0.19);
+    }
+    .work {
+        display:block;
+    }
+/* CONTACT */
+    form {
+        margin-top:-4vh;
+        margin-right:0vw;
+        margin-left:10vw;
+        font-size:1.5vw;
+    }
+    input {
+        width:80%;
+    }
+    .logo {
+        display:block;
+        margin:auto;
+        padding:2%;
+    }
+    #linkedIn {
+        margin-top:-12%;
+        width:10vw;
+    }
+    #freecodecamp {
+        margin-top:-4%;
+        width:8vw;
+    }
+    #coursera {
+        display:block;
+        margin-top:-18%;
+        width:10vw;
+    }
+    #github {
+        width:8vw;
+        margin-bottom:6.5vw;
+        margin-left:16.5vw;
+    }
+/* Hoovering cool effect */
+    #linkedIn:hover {
+        width:35%;
+        margin-top:-15%;
+    }
+    #freecodecamp:hover {
+        width:35%;
+    }
+    #coursera:hover {
+        width:35%;
+    }
+    #github:hover {
+        width:35%;
+        margin-left:14vw;
+    }
+/* BACKGROUND PICTURES - HEAVY */
+    #desPicture {
+        background-position:0vh -12vh;
+        height:70vh;
+        background-image:url("img/bookshelf.jpg");
+    }
+    #knowPicture {
+        height:45vh;
+        background-image:url("img/bookshelf.jpg")
+    }
+    #portPicture {
+        height:45vh;
+        background-image:url("img/blueprint.jpg");
+    }
+    #contactPicture {
+        height:45vh;
+        background-image:url("img/pexels-coffee-bean-430546.jpg") ;
+    }
+}
